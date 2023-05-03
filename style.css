@@ -56,7 +56,7 @@ ul li a, menu li a{
     display: inline-block;
     padding: 0.2em;
 }
-p, ul {
+p{
     max-width: 48em;
 }
 
@@ -213,6 +213,32 @@ section#blog-en-inspiratie{
     background: SkyBlue;
     border-radius: 0;
 }
+section#blog-en-inspiratie ul{
+    list-style: none;
+    margin: 0 -1rem;
+    padding: 0;
+    overflow-x: scroll;
+    display: flex;
+    flex-wrap: nowrap;
+}
+section#blog-en-inspiratie ul li{
+
+}
+section#blog-en-inspiratie ul li a{
+    width: 20rem;
+    margin: 1rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+section#blog-en-inspiratie ul li a strong{
+    display: block;
+}
+section#blog-en-inspiratie ul li a:hover{
+    background: PaleGoldenrod;
+}
+
 /* FOOTER */
 footer{
     margin: 0;
