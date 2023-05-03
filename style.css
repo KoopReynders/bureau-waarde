@@ -213,6 +213,11 @@ section#blog-en-inspiratie{
     background: SkyBlue;
     border-radius: 0;
 }
+section#blog-en-inspiratie ol{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 section#blog-en-inspiratie ul{
     list-style: none;
     margin: 0 -1rem;
