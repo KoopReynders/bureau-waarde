@@ -17,9 +17,14 @@
 
     <header>
       <h1>Bureau wAARDE</h1>
-      <p>Bureau wAARDE helpt bedrijven, sociaal ondernemers, overheden en andere organisatie bij het meer circulair krijgen van hun systemen, processen en ketens.</p>
-      <p>Met het creëren van programma's, de transitiebegeleiding en het meer circulair maken van ketens zorgt Bureau wAARDE er voor dat met kleine stappen grotere systemen veranderen</p>
-      <p>Minimaliseren van het onttrekken van waarde aan de aarde en tegelijkertijd waarde creatie voor mens en milieu is het hogere doel.</p>
+      <h2>Informatie, advies en activiteiten voor Urban mining & Circulaire economie</h2>
+
+      <div id="cards">
+        <p id="info">Met het creëren van programma's, de transitiebegeleiding en het meer circulair maken van ketens zorgt Bureau wAARDE er voor dat met kleine stappen grotere systemen veranderen.</p>
+        <p id="advies">Bureau wAARDE helpt bedrijven, sociaal ondernemers, overheden en organisatie bij het meer circulair krijgen van hun systemen, processen en ketens.</p>
+        <p id="activiteiten">Minimaliseren van het onttrekken van waarde aan de aarde en tegelijkertijd waarde creatie voor mens en milieu is het hogere doel.</p>
+      </div>
+      <div id="aarde">AARDE</div>
 
       <h2>We trekken de aarde leeg en gooien teveel afval weg</h2>
       <p>We weten niet beter. 
@@ -46,11 +51,11 @@
     <section id="contact">
         <h2>Contact</h2>
         <p>Je organisatie meer circulair maken? 
-          Het leven van producten verlegeng? 
+          Het leven van producten verlsengen? 
           Een duurzaamheidsprogramma implementeren? 
           LCA analyses maken voor producten of systemen? 
-          Creatieve workshop nodig om duurzaamheid op de kaart te zetten? 
-          Voor vragen en contact</p>
+          Creatieve workshop nodig om duurzaamheid op de kaart te zetten?</p>
+        <p>Voor vragen en contact:</p>
         <ul>
             <li>Bureau wAARDE</li>
             <li>Richard Kaper</li>
@@ -180,6 +185,14 @@
         </footer> <!-- END: About-->
 
       </main>
+
+<script>
+  //zet middelste kaart in het (scroll) midden 
+  const cards = document.querySelector("#cards");
+  const middle = document.querySelector("#advies")
+  cards.scrollLeft = middle.offsetLeft +
+    middle.offsetWidth / 2 - cards.offsetWidth / 2;
+</script>
 
   </body>
 

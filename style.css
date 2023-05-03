@@ -56,6 +56,9 @@ ul li a, menu li a{
     display: inline-block;
     padding: 0.2em;
 }
+p {
+    max-width: 48em;
+}
 
 /* HEADER */
 /* 
@@ -64,11 +67,65 @@ https://html-color.codes/color-names/darkseagreen
 https://www.colorhexa.com/8fbc8f
 */
 header{
-    background: darkseagreen;
+    background: #accdac;
     padding: 2rem 1rem;
 }
-p {
-    max-width: 48em;
+div#cards{
+    /* background: lightpink; */
+    /* max-width: 48em; */
+    /* position: relative; */
+    margin: 0 -1rem;
+    padding-top: 2rem;
+    padding-bottom: 7rem;
+    /* perspective: 1000px; */
+    overflow-x: scroll;
+    /* border: red solid */
+}
+div#cards > p{
+    background: darkseagreen;
+    width: 16em;
+    height: 22em;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: solid #83b483 0.5rem;
+    box-shadow: rgba(44, 73, 44, 0.4) 0px 48px 100px 0px;
+}
+p#info{
+    /* font-size: 0.98em; */
+    position: relative;
+    /* transform: rotateY(20deg) translateX(-20px); */
+    transform: rotate(-10deg);
+    margin-left: 1em;
+    z-index: 3;
+}
+p#advies{
+    position: relative;
+    transform: rotate(-1deg);
+    margin-top: -24em;
+    margin-left: 17em;
+    z-index: 5;
+    transform: scale(1);
+}
+p#activiteiten{
+    position: relative;
+    transform: rotate(6deg);
+    margin-top: -22em;
+    margin-left: 33em;
+    z-index: 1;
+}
+div#aarde{
+    position: relative;
+    background: lightblue;
+    display:block;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    font-size: 0;
+    border: solid black 0.15rem;
+    margin: 0 auto;
+    margin-top: -6rem;
+    margin-bottom: 4rem;
+    z-index: 10;
 }
 
 /* NAV */
