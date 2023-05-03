@@ -1,5 +1,5 @@
 Bureau wAARDE
 =================
 
-Online web presence Bureau wAARDE. Super simpel. Super straigtforward. Super usable: 
+Online web presence Bureau wAARDE. Eenvoudig. Straigtforward. Usable: 
 Responsive. Leesbaar. Toegankelijk. 
