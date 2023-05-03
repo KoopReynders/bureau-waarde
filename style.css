@@ -14,28 +14,21 @@ html {
 
 /* BODY SETTINGS */
 body{
-    margin: 0;
-    padding: 0;
+    background: #eee;
+    color: #222;
     font-family: Helvetica, Verdana, sans-serif;
     font-size: 1.1em;
     line-height: 1.5em; /*line height beetje ophogen, leest beter */
     letter-spacing: -0.01em; /*ietsiepietsie afspatieëren */
-    color: #333;
-    background: #eee;
+    margin: 0;
+    padding: 0;
 }
 a{
     color: #333;
 }
 a:hover, a:focus{
-    color: white;
-    background: black;
-}
-h3:target{
-    background: #46e2ff;
-    align-items: center;
-    justify-content: center;
-    scroll-margin-top: 2em;
-    margin-top: 2em;
+    background: #fffc86;
+    /* color: white; */
 }
 h1{
     font-size: 1.9em;
@@ -52,198 +45,86 @@ h2{
 h3{
 
 }
-ul{
+ul, menu{
     margin: 0;
     padding-left: 1em;
 }
-ul li{
-
+ul li, menu li{
+    margin-bottom: 0.2em;
+}
+ul li a, menu li a{
+    display: inline-block;
+    padding: 0.2em;
 }
 
+/* HEADER */
+/* 
+darkseagreen
+https://html-color.codes/color-names/darkseagreen
+https://www.colorhexa.com/8fbc8f
+*/
+header{
+    background: darkseagreen;
+    padding: 2rem 1rem;
+}
+p {
+    max-width: 48em;
+}
+
+/* NAV */
+nav{
+    background: #accdac;
+    padding: 1rem;
+}
+
+/* CONTACT */
+section#contact{
+    background: lightpink;
+    padding: 1rem;
+}
 
 /* MAIN */
-
 main{
-    padding: 0.6em 0;
-    margin: 0 auto;
-    background: url("../img/emmy_tessel_psychiater_640.jpg") #eee no-repeat center top;
-    /* max-width: 640px; */
-    max-width: 50em;
-    /* min-height: 700px; */
-    overflow: hidden;
+    /* background: lightpink; */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+main > header{
+    background: none;
+    margin: 2em 0;
+    width: 100vw;
 }
 main section{
-    margin: 1em;
-    padding: 1em 0.8em;
-    max-width: 20em;
-    border-radius: 0.5em;
-    background: rgba(255,255,255,0.95);
+    background: #fff;
+    color: #333;
+    margin: 1rem;
+    padding: 1rem;
+    min-width: 20em;
+    max-width: 30em;
+    border-radius: 0.5rem;
 }
-
-main section header{
-    position: relative;
-
+main section:target{
+    background: #fffc86;
+    /* margin-top: 2rem; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* scroll-margin-top: 2rem; */
 }
-main section header h2{
-    max-width: 10em;
-    margin-top: 2em;
-}
-p.circle{
-    position: absolute;
-    top: 1em;
-    right: -1.5em;
-    background: #46e2ff;
-    border-radius: 50%;
-    width: 6em;
-    height: 6em;
-    font-size: 1em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* align-content: space-around; */
-}
-p.circle span{
-
-}
-
-main section ul{
-  list-style-type: circle;
-}
-main section#contact{
-    background-color: #46e2ff;
-}
-main section#contact h2{
-    margin-bottom: 0.4em;
-    margin-top: 0.4em;
-}
-/* ERROR melding */
-main section#contact em{
-    display: none;
-    padding: 0em;
-    font-weight: normal;
-    line-height: 1.1em;
-    letter-spacing: 0.05em;
-    font-size: 1em;
-    color: #fff;
-    }
-
-main section#contact ul{
-      margin: 0.4em 0;
-      padding: 0em;
-      list-style: none;
-    }
 
 /* FOOTER */
 footer{
-    color: #444;
-    margin: 0 auto;
-    background: #eee;
-    padding-top: 2rem;
-    padding-bottom: 6em;
-    max-width: 640px;
-    display:flex;
+    /* background: #eee; */
+    /* color: #444; */
+    /* font-size: 1rem; */
+    margin-bottom: 4rem;
+    padding: 1rem;
+    /* max-width: 640px; */
+    width: 100vw;
+    /* display:flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:space-between;
-    align-items: flex-start;
-    font-size: 1rem;
-}
-footer header{
-    margin: 0 1rem;
-    padding: 0.6rem;
-    width: 100%;
-}
-footer header h2{
-    margin-bottom: 0em;
-}
-footer section {
-    margin: 0;
-    padding: 0 1.6rem;
-    max-width: 30em;
-}
-footer section h3{
-    margin-top: 0;
-    /* padding-top: 3rem; */
-    height: 5rem;
-    display: flex;
-    align-items:flex-end;
-}
-footer section ul{
-    margin-top:-0.8em;
-    margin-bottom: 1em;
-}
-footer section li{
-  list-style-type: circle;
-  margin: 0;
-  padding: 0;
-}
-footer section h4{
-    font-size: 1rem;
-}
-footer section h4+p{
-  margin-top: -1em;
-}
-footer section h4+ul li{
-  list-style-type:disc;
-}
-
-
-/* RESPONSIVE */
-@media all and (min-width: 22rem) {
-    main section header h1{
-      line-height: 1em;
-    }
-    main section header h2{
-        margin-top: 3em;
-    }
-    p.circle{
-        top: 1em;
-        right: -1em;
-        font-size: 1.4em;
-        line-height: 1.2em;
-    }
-    footer{
-      font-size: 1.1em;
-    }
-}
-
-@media all and (min-width: 50em) {
-    main{
-        background-image: url("../img/emmy_tessel_psychiater_800.jpg");
-        max-width: 800px;
-        min-height: 800px;
-    }
-    main section header h2{
-        max-width: none;
-        margin-top: 2em;
-    }
-    p.circle{
-      top: -2em;
-      right: -5em;
-    }
-    main section{
-      margin: 2em;
-    }
-    footer{
-      max-width: 800px;
-    }
-    footer section{
-       width: 50%;
-    }
-}
-
-
-@media all and (min-width: 65em) {
-    main{
-        background-image: url("../img/emmy_tessel_psychiater_1024.jpg");
-        max-width: 1024px;
-        min-height: 900px;
-    }
-    footer{
-        max-width: 1024px;
-    }
-    footer section{
-        width: 33%;
-    }
+    align-items: flex-start; */
 }
