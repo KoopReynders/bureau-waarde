@@ -27,7 +27,7 @@ a{
     color: #333;
 }
 a:hover, a:focus{
-    background: #fffc86;
+    background: Khaki;
     /* color: white; */
 }
 h1{
@@ -56,7 +56,7 @@ ul li a, menu li a{
     display: inline-block;
     padding: 0.2em;
 }
-p {
+p, ul {
     max-width: 48em;
 }
 
@@ -115,7 +115,7 @@ p#activiteiten{
 }
 div#aarde{
     position: relative;
-    background: lightblue;
+    background: SkyBlue;
     display:block;
     width: 8rem;
     height: 8rem;
@@ -134,6 +134,30 @@ nav{
     padding: 1rem;
     padding-bottom: 2rem;
 }
+nav menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap
+}
+nav menu li{
+    margin: 0.5rem;
+
+}
+nav menu li a{
+    display: block;
+    background: lightcoral;
+    padding: 0.5rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+}
+nav menu li a[href*="contact"]:hover{
+    background: lightpink;
+}
+nav menu li a[href*="blog"]:hover,nav menu li a[href*="over"]:hover{
+    background: SkyBlue;
+}
 
 /* CONTACT */
 section#contact{
@@ -141,10 +165,15 @@ section#contact{
     padding: 1rem;
     padding-bottom: 2rem;
 }
+section#contact ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
 /* MAIN */
 main{
-    /* background: lightpink; */
+    background: ;
     margin: 0;
     padding: 0;
     display: flex;
@@ -153,7 +182,7 @@ main{
 main > header{
     background: none;
     margin: 0;
-    margin-top: 2rem;
+    margin-top: 3rem;
     padding: 1rem;
     width: 100vw;
 }
@@ -162,30 +191,34 @@ main section{
     color: #333;
     margin: 1rem;
     padding: 1rem;
-    min-width: 20em;
+    /* min-width: 20em; */
     max-width: 28em;
     border-radius: 0.5rem;
 }
 main section:target{
-    background: #fffc86;
+    background: PaleGoldenrod;
     /* margin-top: 2rem; */
     /* align-items: center; */
     /* justify-content: center; */
-    /* scroll-margin-top: 2rem; */
+    scroll-margin-top: 2rem;
 }
 
+/* BLOG */
+section#blog-en-inspiratie{
+    margin: 0;
+    margin-top: 2rem;
+    padding-top: 3rem;
+    width: 100vw;
+    max-width:none;
+    background: SkyBlue;
+    border-radius: 0;
+}
 /* FOOTER */
 footer{
-    /* background: #eee; */
-    /* color: #444; */
-    /* font-size: 1rem; */
+    margin: 0;
+    /* margin-top: 2rem; */
     margin-bottom: 4rem;
     padding: 1rem;
-    /* max-width: 640px; */
+    padding-top: 2rem;
     width: 100vw;
-    /* display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:space-between;
-    align-items: flex-start; */
 }
