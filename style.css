@@ -31,19 +31,19 @@ a:hover, a:focus{
     /* color: white; */
 }
 h1{
-    font-size: 1.9em;
+    font-size: 2.2em;
     line-height: 0.9em; /*line-height in header strak zetten */
     letter-spacing: -0.04em; /*titels iets meer afspatieëren = lekker */
     margin: 0.4em 0 0 0;
     padding: 0;
 }
 h2{
-    font-size: 1.4em;
+    font-size: 1.8em;
     line-height: 1.1em;
     letter-spacing: -0.01em;
 }
 h3{
-
+    font-size: 1.3em;
 }
 ul, menu{
     margin: 0;
@@ -76,57 +76,65 @@ div#cards{
     /* position: relative; */
     margin: 0 -1rem;
     padding-top: 2rem;
-    padding-bottom: 7rem;
+    padding-bottom: 10rem;
     /* perspective: 1000px; */
     overflow-x: scroll;
     /* border: red solid */
 }
-div#cards > p{
+div#cards > div{
     background: darkseagreen;
-    width: 16em;
-    height: 22em;
+    width: 16rem;
+    height: 22rem;
     padding: 1rem;
     border-radius: 0.5rem;
     border: solid #83b483 0.5rem;
     box-shadow: rgba(44, 73, 44, 0.4) 0px 48px 100px 0px;
 }
-p#info{
+div#info{
     /* font-size: 0.98em; */
     position: relative;
     /* transform: rotateY(20deg) translateX(-20px); */
     transform: rotate(-10deg);
-    margin-left: 1em;
+    margin-top: 2rem;
+    margin-left: 1rem;
     z-index: 3;
 }
-p#advies{
+div#advies{
     position: relative;
     transform: rotate(-1deg);
-    margin-top: -24em;
-    margin-left: 17em;
+    margin-top: -24rem;
+    margin-left: 17rem;
     z-index: 5;
     transform: scale(1);
 }
-p#activiteiten{
+div#activiteiten{
     position: relative;
     transform: rotate(6deg);
-    margin-top: -22em;
-    margin-left: 33em;
+    margin-top: -21rem;
+    margin-left: 33rem;
     z-index: 1;
 }
-div#aarde{
+div#circulair{
+    max-width: 48em;
     position: relative;
-    background: SkyBlue;
-    display:block;
-    width: 8rem;
-    height: 8rem;
-    border-radius: 50%;
-    font-size: 0;
-    border: solid black 0.15rem;
-    margin: 0 auto;
-    margin-top: -6rem;
+    /* width: 8rem; */
+    /* height: 8rem; */
+    margin: 0;
+    margin-top: -7rem;
     margin-bottom: 4rem;
     z-index: 10;
+    text-align: center;
 }
+div#circulair img{
+    transform: scale(0.75);
+    opacity: 0.8;
+    animation: circulair 30s infinite linear;
+}
+@keyframes circulair {
+    100% {
+      rotate: -1turn;
+    }
+  }
 
 /* NAV */
 nav{
@@ -139,7 +147,8 @@ nav menu{
     margin: 0;
     padding: 0;
     display: flex;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    max-width: 48rem;;
 }
 nav menu li{
     margin: 0.5rem;
