@@ -31,7 +31,7 @@ a:hover, a:focus{
     /* color: white; */
 }
 h1{
-    font-size: 2.2em;
+    font-size: 3em;
     line-height: 0.9em; /*line-height in header strak zetten */
     letter-spacing: -0.04em; /*titels iets meer afspatieëren = lekker */
     margin: 0.4em 0 0 0;
@@ -156,13 +156,13 @@ nav menu li{
 }
 nav menu li a{
     display: block;
-    background: lightcoral;
+    background: LightSalmon;
     padding: 0.5rem;
     text-decoration: none;
     border-radius: 0.5rem;
 }
 nav menu li a[href*="contact"]:hover{
-    background: lightpink;
+    background: AntiqueWhite;
 }
 nav menu li a[href*="blog"]:hover,nav menu li a[href*="over"]:hover{
     background: SkyBlue;
@@ -170,7 +170,7 @@ nav menu li a[href*="blog"]:hover,nav menu li a[href*="over"]:hover{
 
 /* CONTACT */
 section#contact{
-    background: lightpink;
+    background: AntiqueWhite;
     padding: 1rem;
     padding-bottom: 2rem;
 }
