@@ -86,6 +86,15 @@ header{
     background: #accdac;
     padding: 2rem 1rem;
 }
+h1 img{
+    animation: circulair 30s infinite linear;
+    margin-left: 0.2rem;
+}
+@keyframes circulair {
+    100% {
+      rotate: 1turn;
+    }
+  }
 div#cards{
     /* background: lightpink; */
     /* max-width: 48em; */
@@ -130,7 +139,7 @@ div#activiteiten{
     margin-left: 33rem;
     z-index: 1;
 }
-div#circulair{
+div#earth{
     max-width: 48em;
     position: relative;
     /* width: 8rem; */
@@ -141,16 +150,12 @@ div#circulair{
     z-index: 10;
     text-align: center;
 }
-div#circulair img{
-    transform: scale(0.75);
-    opacity: 0.8;
-    animation: circulair 30s infinite linear;
+div#earth img{ /* https://thenounproject.com/icon/circle-4466868/ */
+    transform: scale(1);
+    opacity: 0.9;
+    object-position: 0 1rem;
 }
-@keyframes circulair {
-    100% {
-      rotate: -1turn;
-    }
-  }
+
 
 /* NAV */
 nav{
@@ -228,20 +233,24 @@ main section{
 }
 main section:target{
     background: PaleGoldenrod;
-    /* margin-top: 2rem; */
-    /* align-items: center; */
-    /* justify-content: center; */
     scroll-margin-top: 2rem;
 }
 
 /* BLOG */
-section#blog-en-inspiratie{
+section#blog-en-inspiratie{ /* https://thenounproject.com/icon/pattern-2956272/ */
     margin: 0;
     margin-top: 2rem;
     padding-top: 3rem;
     width: 100vw;
     max-width:none;
-    background: SkyBlue;
+
+    background:
+        radial-gradient(circle at 100% 50%, transparent 20%, rgba(255,255,255,.15) 21%, rgba(255,255,255,.15) 34%, transparent 35%, transparent),
+        radial-gradient(circle at 0% 50%, transparent 20%, rgba(255,255,255,.15) 21%, rgba(255,255,255,.15) 34%, transparent 35%, transparent) 0 -50px;
+    /* background: url("img/water2.png"); */
+    /* background-blend-mode:overlay; */
+    background-color: skyblue;
+    background-size: 75px 100px;
     border-radius: 0;
 }
 section#blog-en-inspiratie ol{
@@ -276,7 +285,7 @@ section#blog-en-inspiratie ul li a:hover{
 }
 
 /* FOOTER */
-footer{
+footer#over-bureau-waarde{
     margin: 0;
     /* margin-top: 2rem; */
     margin-bottom: 4rem;
