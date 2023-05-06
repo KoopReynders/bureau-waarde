@@ -49,7 +49,6 @@ a{
 }
 a:hover, a:focus{
     background: gold;
-    /* color: white; */
 }
 h1{
     font-size: 3em;
@@ -214,11 +213,12 @@ section#contact ul{
 
 /* MAIN */
 main{
-    background: ;
+    background: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    
 }
 main > header{
     background: none;
@@ -227,7 +227,7 @@ main > header{
     padding: 1rem;
     width: 100vw;
 }
-main section{
+main > article{
     background: #fff;
     color: #333;
     margin: 1rem;
@@ -235,27 +235,55 @@ main section{
     /* min-width: 20em; */
     max-width: 28em;
     border-radius: 0.5rem;
+    /* align-items: flex-start; */
+    /* align-content:flex-start; */
+    display: inline-block;
+    vertical-align: top;
 }
-main section:target{
+main > article div{
+    max-height: 40em;
+    overflow: hidden;
+    transition: max-height 400ms ease-in-out;
+}
+main > article:target{
     background: PaleGoldenrod;
     scroll-margin-top: 2rem;
 }
+.feedback:hover{
+    background: PaleGoldenrod;
+    cursor: pointer;
+}
+main > article > a{
+    text-decoration: underline;
+}
+main > article > a:hover{
+    background: none;
+}
+.hide{
+    margin: 0;
+    padding: 0;
+    max-height: 0;
+}
+/* .highlight{
+    background: gold;
+    cursor: pointer;
+} */
 
 /* BLOG */
 section#blog-en-inspiratie{ /* https://thenounproject.com/icon/pattern-2956272/ */
     margin: 0;
     margin-top: 2rem;
     padding-top: 3rem;
+    padding: 1rem;
     width: 100vw;
     max-width:none;
 
-    background:
+    /* background:
         radial-gradient(circle at 100% 50%, transparent 20%, rgba(255,255,255,.15) 21%, rgba(255,255,255,.15) 34%, transparent 35%, transparent),
-        radial-gradient(circle at 0% 50%, transparent 20%, rgba(255,255,255,.15) 21%, rgba(255,255,255,.15) 34%, transparent 35%, transparent) 0 -50px;
-    /* background: url("img/water2.png"); */
-    /* background-blend-mode:overlay; */
+        radial-gradient(circle at 0% 50%, transparent 20%, rgba(255,255,255,.15) 21%, rgba(255,255,255,.15) 34%, transparent 35%, transparent) 0 -50px; */
+    background: url("img/water3.png");
+    /* background-size: 100px 100px; */
     background-color: skyblue;
-    background-size: 75px 100px;
     border-radius: 0;
 }
 section#blog-en-inspiratie ol{
