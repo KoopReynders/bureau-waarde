@@ -210,6 +210,18 @@ section#contact ul{
     margin: 0;
     padding: 0;
 }
+address{
+    background: lightcoral;
+    font-style: normal;
+    display: inline-block;
+    /* display:flex */
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+address > *{
+    display: block;
+    margin-bottom: 0.2rem;
+}
 
 /* MAIN */
 main{
