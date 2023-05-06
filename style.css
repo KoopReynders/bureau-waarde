@@ -281,8 +281,8 @@ section#blog-en-inspiratie{ /* https://thenounproject.com/icon/pattern-2956272/ 
     /* background:
         radial-gradient(circle at 100% 50%, transparent 20%, rgba(255,255,255,.15) 21%, rgba(255,255,255,.15) 34%, transparent 35%, transparent),
         radial-gradient(circle at 0% 50%, transparent 20%, rgba(255,255,255,.15) 21%, rgba(255,255,255,.15) 34%, transparent 35%, transparent) 0 -50px; */
-    background: url("img/water3.png");
-    /* background-size: 100px 100px; */
+    background: url("img/water.svg");
+    background-size: 300px 300px;
     background-color: skyblue;
     border-radius: 0;
 }
