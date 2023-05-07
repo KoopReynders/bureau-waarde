@@ -47,7 +47,8 @@ body{
 a{
     color: #222;
 }
-a:hover, a:focus{
+a:hover, 
+a:focus{
     background: gold;
 }
 h1{
@@ -154,7 +155,7 @@ div#earth{
     z-index: 10;
     text-align: center;
 }
-div#earth img{ /* https://thenounproject.com/icon/circle-4466868/ */
+div#earth img{ 
     transform: scale(1);
     /* opacity: 0.9; */
     /* object-position: 0 1rem; */
@@ -189,7 +190,8 @@ nav menu a{
 nav menu a[href*="contact"]{
     background: lightcoral;
 }
-nav menu a[href*="blog"],nav menu a[href*="over"]{
+nav menu a[href*="blog"],
+nav menu a[href*="over"]{
     background: SkyBlue;
 }
 nav menu a:hover,
@@ -282,7 +284,7 @@ main > article > a:hover{
 } */
 
 /* BLOG */
-section#blog-en-inspiratie{ /* https://thenounproject.com/icon/pattern-2956272/ */
+section#blog-en-inspiratie{ 
     margin: 0;
     margin-top: 2rem;
     padding-top: 3rem;
@@ -294,7 +296,7 @@ section#blog-en-inspiratie{ /* https://thenounproject.com/icon/pattern-2956272/ 
         radial-gradient(circle at 100% 50%, transparent 20%, rgba(255,255,255,.15) 21%, rgba(255,255,255,.15) 34%, transparent 35%, transparent),
         radial-gradient(circle at 0% 50%, transparent 20%, rgba(255,255,255,.15) 21%, rgba(255,255,255,.15) 34%, transparent 35%, transparent) 0 -50px; */
     background: url("img/water.svg");
-    background-size: 300px 300px;
+    background-size: 500px 500px;
     background-color: skyblue;
     border-radius: 0;
 }
@@ -318,7 +320,7 @@ section#blog-en-inspiratie ul li a{
     width: 20rem;
     margin: 1rem;
     padding: 1rem;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.5);
     border-radius: 0.5rem;
     text-decoration: none;
 }

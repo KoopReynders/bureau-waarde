@@ -255,32 +255,32 @@
 
 <script>
 
-if(document.querySelector){ //cutton the mustard, feature detection op queryselector
+if ('querySelector' in document
+    && 'addEventListener' in window){ //cutting the mustard, feature detection op queryselector
 
-  //zet middelste kaart in het (scroll) midden 
+  //Zet middelste kaart in het (scroll) midden 
   const cards = document.querySelector("#cards")
   const middle = document.querySelector("div:nth-of-type(2)")
   cards.scrollLeft = middle.offsetLeft + middle.offsetWidth / 2 - cards.offsetWidth / 2
 
-  //voeg scroll toe aan de inspiratie links 
+  //Feedforward: Beeje scroll toevoegen aan de inspiratie links
   const inspi = document.querySelector("#blog-en-inspiratie ul")
-  const firstlink = inspi.querySelector("li")
-  // inspi.scrollLeft = firstlink.offsetWidth / 3
-  inspi.scrollLeft = inspi.scrollWidth
+  // inspi.scrollLeft = inspi.scrollWidth
+  inspi.scrollLeft = inspi.querySelector("li").offsetWidth / 2
 
-  //show/hide articles
+  //Articles show/hide interactie
   const articles = document.querySelectorAll("article")
   articles.forEach(function (item) {
     //hide parafgraphs in <div> and add feedback
     item.querySelector("div").classList.add("hide") //hide paragraphs in <div> (if javascript)
     item.classList.add("feedback") //add class with hover style
-    item.innerHTML += "<a>klik voor meer informatie</a>" //add <a>meer info</a> for feedforward
+    item.innerHTML += "<a>Meer informatie ...</a>" //add <a>meer info</a> for feedforward
     //click
     item.addEventListener("click",function(){ 
       item.querySelector("div").classList.remove("hide") //show article paragraphs in <div>
       item.querySelector("main > article > a").remove(); //remove <a>meer info</a> from article
       item.classList.remove("feedback") //remove feedback:hover style from opened article
-      window.location.hash = "null"; //set different hash to remove target (id) style
+      // window.location.hash = "null"; //set different hash to remove target (id) style
       history.pushState(null, null, ' ') //remove hash from url
     })
   })
