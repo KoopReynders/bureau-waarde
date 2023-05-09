@@ -276,16 +276,13 @@ main > article:target{
 .feedback:hover{
     background: PaleGoldenrod;
 }
-/* main > article:hover{
-    background: PaleGoldenrod;    
-} */
+/* a link in article to show/hide */
 main > article > a{
-    /* text-decoration: underline; */
 }
 main > article > a:hover {
-    /* background: PaleGoldenrod; */
     background: none;
 }
+/* before pseude selector to enlarge a link hit area */
 main > article > a::before{
     content: " ";
     position: absolute;
@@ -293,17 +290,12 @@ main > article > a::before{
     left: 0;
     width: 100%;
     height: 100%;
-
 }
 .hide{
     margin: 0;
     padding: 0;
     max-height: 0;
 }
-/* .highlight{
-    background: gold;
-    cursor: pointer;
-} */
 
 /* BLOG */
 section#blog-en-inspiratie{ 
@@ -334,7 +326,6 @@ section#blog-en-inspiratie ul{
     overflow-x: scroll;
     display: flex;
     flex-wrap: nowrap;
-    /* background: lightpink; */
 }
 section#blog-en-inspiratie ul li{
     /* scroll-snap-align: center; */
