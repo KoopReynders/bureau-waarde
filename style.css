@@ -232,7 +232,6 @@ main{
     padding: 0;
     /* display: flex; */
     /* flex-wrap: wrap; */
-    
 }
 main > header{
     background: none;
@@ -242,6 +241,7 @@ main > header{
     width: 100vw;
 }
 main > article{
+    position: relative;
     background: #fff;
     color: #333;
     margin: 1rem;
@@ -253,6 +253,8 @@ main > article{
     /* align-content:flex-start; */
     display: inline-block;
     vertical-align: top;
+    /* transition: background-color 2s ease-in-out; */
+
 }
 main > article div{
     max-height: 40em;
@@ -260,18 +262,38 @@ main > article div{
     transition: max-height 400ms ease-in-out;
 }
 main > article:target{
-    background: PaleGoldenrod;
     scroll-margin-top: 2rem;
+    animation: highlight-color 2s ease-out;
+}
+@keyframes highlight-color {
+    from {
+        background: PaleGoldenrod;
+      }
+      to {
+        background: #fff;
+      }
 }
 .feedback:hover{
     background: PaleGoldenrod;
-    cursor: pointer;
 }
+/* main > article:hover{
+    background: PaleGoldenrod;    
+} */
 main > article > a{
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
-main > article > a:hover{
+main > article > a:hover {
+    /* background: PaleGoldenrod; */
     background: none;
+}
+main > article > a::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
 }
 .hide{
     margin: 0;
@@ -312,9 +334,18 @@ section#blog-en-inspiratie ul{
     overflow-x: scroll;
     display: flex;
     flex-wrap: nowrap;
+    /* background: lightpink; */
 }
 section#blog-en-inspiratie ul li{
+    /* scroll-snap-align: center; */
+    /* scroll-snap-align: end; */
+    /* scroll-snap-align: center; */
+}
 
+section#blog-en-inspiratie ul li:first-of-type{
+    /* scroll-padding-left: 140px; */
+    /* scroll-margin-left: 50rem; */
+    /* margin-left: -10rem; */
 }
 section#blog-en-inspiratie ul li a{
     width: 20rem;

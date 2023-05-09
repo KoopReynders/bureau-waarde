@@ -159,9 +159,9 @@
           <h3>Inspiratie</h3>
           <p>Sommige boeken, documentaires, video's komen dusdanig bij me binnen dat ze mijn gedachte blijven raken. 
             Tijdens een stuk trailrunnen of mountainbiken komt dan vaak een inzicht. 
-            Hieronder een paar van deze voor mij verschil makende inspiratiebronnen zijn. 
-            Wat mij betreft zou iedereen die geïnteresseerd is in het thema circulaire-economie, duurzaamheid of urban-mining deze moeten lezen en bekijken. 
-            Af en toe komt er een bron bij, sommige bronnen zullen hier altijd blijven staan.</p>
+            Hieronder een paar van deze voor mij verschil makende inspiratiebronnen. 
+            Wat mij betreft zou iedereen die geïnteresseerd is in het thema circulaire-economie, duurzaamheid of urban-mining deze moeten lezen. 
+            Af en toe komt er een bron bij, terwijl sommige bronnen hier altijd zullen blijven staan.</p>
           <ul>
             <li>
               <a href="https://www.npostart.nl/KN_1718263">
@@ -202,13 +202,12 @@
             </ul>
 
             <h3>Patagonia</h3>
-            <p>Het buitensport bedrijf dat precies zo oud is als ikzelf. 
-              Toen ik als tiener in de ban raakte van bergen en buitensporten werkt ik direct gegrepen door het toen nog jonge bedrijf. 
-              De eerste stappen in Europa werden gezet in beroemde kimmers dorpen als Chamonix en Zermat. 
-              Daar lagen dan in de winkels folders die je nergens anders zag. 
+            <p>Het buitensportbedrijf dat precies zo oud is als ikzelf. 
+              Toen ik als tiener in de ban raakte van bergen en buitensporten werd ik direct gegrepen door het toen nog jonge bedrijf. 
+              De eerste stappen in Europa werden gezet in beroemde kimmersdorpen als Chamonix en Zermatt. 
+              Daar lagen dan in de sportwinkels Patagoniafolders die je nergens anders zag. Foto's van echte mensen, echt buiten aan het zijn en buiten aan het sporten. 
               Als je het boek 'Let my people go surfing' leest begrijp je direct waarom deze folders mij als tiener meteen raakte. 
-              Van mijn eerste verdiende guldens kocht ik mijn eerste Patagonia fleece. 
-              Nu ik na 50 jaar de missie en visie van het bedrijf begrijp, kan ik niet anders dan fan zijn.</p>
+              Van mijn eerste verdiende guldens kocht ik mijn eerste Patagonia fleece. Nu ik na 50 jaar de missie en visie van het bedrijf begrijp, kan ik niet anders dan fan zijn.</p>
 
           <ul>
             <li>
@@ -256,7 +255,7 @@
 <script>
 
 if ('querySelector' in document
-    && 'addEventListener' in window){ //cutting the mustard, feature detection op queryselector
+    && 'addEventListener' in window){ //cutting the mustard, feature detection
 
   //Zet middelste kaart in het (scroll) midden 
   const cards = document.querySelector("#cards")
@@ -271,24 +270,23 @@ if ('querySelector' in document
   //Articles show/hide interactie
   const articles = document.querySelectorAll("article")
   articles.forEach(function (item) {
-    //hide parafgraphs in <div> and add feedback
-    item.querySelector("div").classList.add("hide") //hide paragraphs in <div> (if javascript)
+    item.innerHTML += "<a href='#"+item.id+"'>Meer informatie ...</a>" //add <a>meer info</a> for feedforward
+    let div = item.querySelector("div")
+    let link = item.querySelector("article > a")
+    div.classList.add("hide") //hide paragraphs in <div> (if js)
     item.classList.add("feedback") //add class with hover style
-    item.innerHTML += "<a>Meer informatie ...</a>" //add <a>meer info</a> for feedforward
     //click
-    item.addEventListener("click",function(){ 
-      item.querySelector("div").classList.remove("hide") //show article paragraphs in <div>
-      item.querySelector("main > article > a").remove(); //remove <a>meer info</a> from article
+    link.addEventListener("click",function(){ 
+      div.classList.remove("hide") //show paragraphs in <div>
+      link.remove(); //remove <a>meer info</a> from article
       item.classList.remove("feedback") //remove feedback:hover style from opened article
       // window.location.hash = "null"; //set different hash to remove target (id) style
       history.pushState(null, null, ' ') //remove hash from url
+      event.preventDefault()
     })
   })
 
-}//end: feature detection queryselector
-
-
-
+}//end: feature detection
 </script>
 
   </body>
