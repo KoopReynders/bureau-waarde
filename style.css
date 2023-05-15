@@ -35,7 +35,7 @@ gold
 
 /* BODY SETTINGS */
 body{
-    background: #eee;
+    background-color: #eee;
     color: #222;
     font-family: Helvetica, Verdana, sans-serif;
     font-size: 1.1em;
@@ -49,7 +49,7 @@ a{
 }
 a:hover, 
 a:focus{
-    background: gold;
+    background-color: gold;
 }
 h1{
     font-size: 3em;
@@ -88,7 +88,7 @@ h3{
 
 /* HEADER */
 header{
-    background: #accdac;
+    background-color: #accdac;
     padding: 2rem 1rem;
 }
 h1 img{
@@ -101,18 +101,15 @@ h1 img{
     }
   }
 div#cards{
-    /* background: lightpink; */
-    /* max-width: 48em; */
     /* position: relative; */
     margin: 0 -1rem;
     padding-top: 2rem;
     padding-bottom: 10rem;
     /* perspective: 1000px; */
     overflow-x: scroll;
-    /* border: red solid */
 }
 div#cards > div{
-    background: darkseagreen;
+    background-color: darkseagreen;
     width: 16rem;
     height: 22rem;
     padding: 1rem;
@@ -164,7 +161,7 @@ div#earth img{
 
 /* NAV */
 nav{
-    background: #accdac;
+    background-color: #accdac;
     padding: 1rem;
     padding-bottom: 2rem;
 }
@@ -182,28 +179,28 @@ nav menu li{
 }
 nav menu a{
     display: block;
-    background: khaki;
+    background-color: khaki;
     padding: 0.5rem;
     text-decoration: none;
     border-radius: 0.5rem;
 }
 nav menu a[href*="contact"]{
-    background: lightcoral;
+    background-color: lightcoral;
 }
 nav menu a[href*="blog"],
 nav menu a[href*="over"]{
-    background: SkyBlue;
+    background-color: SkyBlue;
 }
 nav menu a:hover,
 nav menu a[href*="contact"]:hover, 
 nav menu a[href*="blog"]:hover,
 nav menu a[href*="over"]:hover{
-    background: gold;
+    background-color: gold;
 }
 
 /* CONTACT */
 section#contact{
-    background: lightpink;
+    background-color: lightpink;
     padding: 1rem;
     padding-bottom: 2rem;
 }
@@ -213,7 +210,7 @@ section#contact ul{
     padding: 0;
 }
 address{
-    background: lightcoral;
+    background-color: lightcoral;
     font-style: normal;
     display: inline-block;
     /* display:flex */
@@ -227,7 +224,7 @@ address > * {
 
 /* MAIN */
 main{
-    background: none;
+    background-color: none;
     margin: 0;
     padding: 0;
     /* display: flex; */
@@ -242,7 +239,7 @@ main > header{
 }
 main > article{
     position: relative;
-    background: #fff;
+    background-color: #fff;
     color: #333;
     margin: 1rem;
     padding: 1rem;
@@ -267,14 +264,14 @@ main > article:target{
 }
 @keyframes highlight-color {
     from {
-        background: PaleGoldenrod;
+        background-color: PaleGoldenrod;
       }
       to {
-        background: #fff;
+        background-color: #fff;
       }
 }
 .feedback:hover{
-    background: PaleGoldenrod;
+    background-color: PaleGoldenrod;
 }
 /* a link in article to show/hide */
 main > article > a{
@@ -305,14 +302,15 @@ section#blog-en-inspiratie{
     padding: 1rem;
     width: 100vw;
     max-width:none;
-
+    border-radius: 0;
+}
+.water{
     /* background:
         radial-gradient(circle at 100% 50%, transparent 20%, rgba(255,255,255,.15) 21%, rgba(255,255,255,.15) 34%, transparent 35%, transparent),
         radial-gradient(circle at 0% 50%, transparent 20%, rgba(255,255,255,.15) 21%, rgba(255,255,255,.15) 34%, transparent 35%, transparent) 0 -50px; */
-    background: url("img/water.svg");
-    background-size: 500px 500px;
-    background-color: skyblue;
-    border-radius: 0;
+        background: url("img/water.svg");
+        background-size: 500px 500px;
+        background-color: skyblue; 
 }
 section#blog-en-inspiratie ol{
     display: flex;
@@ -342,7 +340,7 @@ section#blog-en-inspiratie ul li a{
     width: 20rem;
     margin: 1rem;
     padding: 1rem;
-    background: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 0.5rem;
     text-decoration: none;
 }
@@ -350,7 +348,7 @@ section#blog-en-inspiratie ul li a strong{
     display: block;
 }
 section#blog-en-inspiratie ul li a:hover{
-    background: PaleGoldenrod;
+    background-color: PaleGoldenrod;
 }
 
 /* FOOTER */
@@ -366,4 +364,5 @@ footer#over-bureau-waarde{
 footer iframe{
     width: 100%;
     aspect-ratio: 16 / 9;
+    border: 0px;
 }
